@@ -16,26 +16,95 @@
 					<div id="main">
 						<div class="inner">
 
-							<header id="header">
-    							<div style="display: flex; align-items: center; justify-content: space-between; gap: 1px;">
-        							<!-- Left Logo -->
-        							<img src="images/20240812_121728.png" alt="Left Logo" style="width: 80px; height: 90px; flex-shrink: 0;">
-        
-       								 <!-- Centered Text -->
-        							<div style="text-align: center; flex-grow: 1; max-width: 900px;">
-										<a href="https://www.pvgcoet.ac.in" class="logo" style="font-size: 13px; font-weight: bold; text-decoration: none; color: black;">
-											<h2>Pune Vidyarthi Griha's College of Engineering and Technology & G K Pate (Wani) Institute of Management</h2>
-										</a>
-            
-										<span style="font-size: 14px; color: gray;">
-											<h4>Approved by AICTE, DTE (Code: 6274) | Affiliated to SPPU, Pune | NAAC third Cycle 'A' Grade</h4>
-										</span>
-									</div>
-        
-									<!-- Right Logo -->
-									<img src="images/sppu_logo.png" alt="Right Logo" style="width: 100px; height: auto; flex-shrink: 0;">
-								</div>
-							</header>
+							<header id="header" style="padding: 10px 0;">
+    <div class="header-container">
+        <!-- Left Logo -->
+        <img src="images/20240812_121728.png" alt="Left Logo" class="logo-img">
+
+        <!-- Centered Text -->
+        <div class="header-text">
+            <a href="https://www.pvgcoet.ac.in" class="logo-link">
+                <h2>Pune Vidyarthi Griha's College of Engineering and Technology & G K Pate (Wani) Institute of Management</h2>
+            </a>
+            <span class="subtext">
+                <h4>Approved by AICTE, DTE (Code: 6274) | Affiliated to SPPU, Pune | NAAC Second Cycle 'A' Grade</h4>
+            </span>
+        </div>
+
+        <!-- Right Logo -->
+        <img src="images/sppu_logo.png" alt="Right Logo" class="logo-img">
+    </div>
+</header>
+
+<style>
+/* General Styling */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap; /* Ensure logos stay on either side */
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.header-text {
+    text-align: center;
+    flex-grow: 1;
+    max-width: 900px;
+}
+
+.logo-link {
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.subtext h4 {
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 60px;
+    }
+
+    .header-text h2 {
+        font-size: 16px;
+    }
+
+    .subtext h4 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        gap: 5px; /* Reduce spacing between elements */
+    }
+
+    .logo-img {
+        width: 40px; /* Smaller logo size */
+    }
+
+    .header-text h2 {
+        font-size: 14px;
+    }
+
+    .subtext h4 {
+        font-size: 11px;
+    }
+}
+</style>
+
 
 							
 							
